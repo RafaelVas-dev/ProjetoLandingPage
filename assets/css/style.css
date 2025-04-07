@@ -66,17 +66,18 @@ a{
 }
 
 .navbar .menu{
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fff;
     background-color: transparent;
-    cursor: pointer;
-    border: 1px solid var(--cor2);
+    border: 1px solid #fff;
     display: none;
 }
 
-.navbar .menu i{
-    font-size: 2rem;
-    color: #fff; 
+#menu-icon{
+    font-size: 42px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
 }
 
 .navbar .nav-btn{
@@ -397,7 +398,7 @@ a{
     }
 
     .navbar .menu{
-        display: flex !important;
+        display: block !important;
         align-items: center;
     }
 
