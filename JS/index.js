@@ -1,12 +1,13 @@
-const menu = document.querySelector('.menu');
-const navMenu = document.querySelector('#navMenu');
+const menu = document.querySelector('#navMenu')
+const botao = document.querySelector('.menu')
 
-menu.addEventListener('click', function (){
-    navMenu.classList.menu("active")
+botao.addEventListener('click', () => {
+ 
+    revelarMenu();
+
 });
 
-const scroll = document.getElementById("scroll");
 
-scroll.addEventListener('click', () =>{
-    document.querySelector(".criando-estilos").scrollIntoView({behavior: 'smooth'});
-})
+function revelarMenu(){
+    clas.menu.style.visibility = 'visible';
+}
