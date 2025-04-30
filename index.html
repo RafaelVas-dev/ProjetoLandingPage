@@ -4,42 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto sobre uma marca de customização de carros">
+    <!-- Link Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Link CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Style Motors</title>
 </head>
 <body>
+
 
     <!-- ==== Header ==== -->
     <header>
         <div class="nav-bar">
             <nav class="nav-list">
                 <ul>
-                    <a href="#">
-                        <li>Quem somos?</li>
-                    </a>
-                    <a href="#">
-                        <li>Serviços</li>
-                    </a>
-                    <a href="#">
-                        <li>Fotos</li>
-                    </a>
-                    <a href="#">
-                        <li>Contato</li>
-                    </a>
+                    <a href="#desc"><li>Quem somos?</li></a>
+
+                    <a href="#serv"><li>Serviços</li></a>
+
+                    <a href="#fts"><li>Fotos</li></a>
+                    
+                    <a href="#cont"><li>Contato</li></a>
                 </ul>
             </nav>
         </div>
     </header>
 
+
     <!-- ==== Main ==== -->
     <main>
 
         <!---- Início ---->
-        <section class="inicio">
+        <section class="inicio" id="inicio">
 
-            <h1>Style Motors</h1>
+            <div class="logo">
+                <a href="#inicio">
+                    <h1>Style Motors</h1>
+                </a>
+            </div>
 
             <video muted loop autoplay id="bg-video">
 
@@ -53,7 +55,7 @@
         </section>
 
         <!---- Descrição ---->
-        <section class="nos">
+        <section class="nos" id="desc">
             <div class="info">
                 <h3>Style Motors</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nemo inventore ipsum deleniti soluta. Cum, distinctio veritatis! Omnis eaque ipsam vel doloremque amet ipsum, libero voluptatem minus non, fugiat ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dignissimos pariatur voluptas.</p>
@@ -61,13 +63,14 @@
         </section>
 
         <!---- Serviços ---->
-        <section class="servicos">
+        <section class="servicos" id="serv">
 
             <div class="conteiner">
 
                 <div class="titulo"> <h1>Serviços</h1> </div>
 
                 <div class="item">
+                    <img src="assets/icons/001-mecanico.png">
                     <div class="item-info">
                         <h4>MANUTENÇÃO</h4>
                         <p>Revisão completa com garantia para o seu carro</p>
@@ -75,6 +78,7 @@
                 </div>
 
                 <div class="item">
+                    <img src="assets/icons/003-elevador-de-carro.png" alt="">
                     <div class="item-info">
                         <h4>PREPARAÇÃO</h4>
                         <p>Preparações para carros de alta performance de rua e pista</p>
@@ -82,6 +86,7 @@
                 </div>
 
                 <div class="item">
+                    <img src="assets/icons/002-diagnostico.png">
                     <div class="item-info">
                         <h4>RESTAURAÇÃO</h4>
                         <p>Restauração completa de veículos antigos</p>
@@ -89,6 +94,7 @@
                 </div>
 
                 <div class="item">
+                    <img src="assets/icons/004-filtro-de-ar.png">
                     <div class="item-info">
                         <h4>CUSTOMIZAÇÃO</h4>
                         <p>Customizações de carros antigos e modernos</p>
@@ -96,6 +102,7 @@
                 </div>
 
                 <div class="item">
+                    <img src="assets/icons/005-motor.png">
                     <div class="item-info">
                         <h4>CONSTRUÇÃO DE PEÇAS</h4>
                         <p>Peças exclusivas para carros clássicos e preparados</p>
@@ -103,17 +110,88 @@
                 </div>
 
                 <div class="item">
+                    <img src="assets/icons/006-aerografo.png">
                     <div class="item-info">
                         <h4>PINTURAS ESPECIAIS</h4>
                         <p>Pinturas clássicas e especiais para carros antigos e modernos</p>
                     </div>
                 </div>
+
+                <div class="credito">Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
                 
             </div>
 
         </section>
+
+        <!---- Fotos ---->
+        <section class="fotos" id="fts">
+
+            <div class="conteiner">
+
+                <div class="titulo"> <h1>Fotos</h1> </div>
+
+                <div class="conteiner-fts"></div>
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!-- <div class="conteiner-info">
+                    
+                    <p>Mais de 1.500 carros customizados!!</p>
+                </div> -->
+                
+            </div>
+
+        </section>
+
+        <!---- Contato ---->
+        <section class="contato" id="cont">
+
+            <div class="titulo"> <h1>Contato</h1> </div>
+
+            <div class="cont-conteiner">
+
+                <div class="hora">
+                    <i class='bx bx-time'></i>
+                    <p>Segunda à Sexta das 8h00 às 21h00</p>
+                </div>
+
+                <div class="btns">
+                    <button><i class='bx bxl-telegram'></i> Enviar Mensagem</button>
+                    <button><i class='bx bxs-phone'></i> Ligar</button>
+                    <button><i class='bx bxl-whatsapp'></i> Fale Conosco</button>
+                </div>
+
+                <div class="links-social">
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-tiktok'></i>
+                    <i class='bx bxl-pinterest-alt'></i>
+                    <i class='bx bxl-linkedin'></i>
+                </div>
+            </div>
+
+        </section>
+
     </main>
+
+
+    <!-- ==== Footer ==== -->
+    <footer>
+        <div class="interface">
+
+        </div>
+    </footer>
    
+
     <script src="index.js"></script>
 </body>
 </html>

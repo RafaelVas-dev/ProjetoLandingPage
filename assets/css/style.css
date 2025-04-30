@@ -12,13 +12,15 @@
 
 :root{
     /*--- Paleta de Cores ---*/
-    --bg-color:#011526;
-    --borda:#BF0000;
-    --borda2: #fd5d00;
+    --bg-color: #b8b4b4;
+    --tx-destaque:#BF0000;
+    --borda: #fd5d00;
     --branco: #fff;
     --preto: #000;
+    --sombra: #00000096;
 
     /*--- Degráde ---*/
+    --cor0:#7F0000;
     --cor1:#75060F;
     --cor2:#960814;
     --cor3:#C90A1B;
@@ -60,7 +62,7 @@ header{
 }
 
 .nav-list a:hover{ 
-    border-bottom: 1px solid var(--borda);
+    border-bottom: 1px solid var(--tx-destaque);
     transform: scale(1.1);
 }
 
@@ -90,11 +92,23 @@ header{
     top: 1em;
     font-size: 6em;
     font-style: italic;
+    z-index: 1;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, var(--cor2), var(--cor3), var(--cor4));
-    z-index: 1;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4), var(--cor0));
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+}
+
+/* Animação do Titulo */
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
 }
 
 #bg-video {
@@ -155,9 +169,10 @@ header{
     position: relative;
     border-radius: 10px;
     background-color: var(--branco);
-    width: 80%;
-    height: 100%;
+    width: 90%;
+    height: auto;
     margin: 3em auto;
+    box-shadow: 3px 0 10px var(--sombra) ;
 }
 
 .titulo{
@@ -172,13 +187,119 @@ header{
     font-family: var(--font-titulo);
     font-weight: 500;
     font-style: italic;
-    color: var(--preto);
+    color: var(--tx-destaque);
 }
 
 .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 1.7rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px var(--borda);
+    box-shadow: 0 0 10px var(--sombra);
     color: var(--preto);
-    padding: 3rem;
+    padding: 2rem;
 }
 
+.item img{
+    padding: 0.5rem;
+}
+
+.item-info h4{
+    font-style: italic;
+    font-family: var(--font-titulo);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.item-info p{
+    font-size: 16px;
+}
+
+.credito, .credito a{
+    color: var(--preto);
+}
+
+/* ===== Fotos ===== */
+
+/* ========== */
+
+
+/* ===== Contato ===== */
+.contato{
+    background-color: var(--branco);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contato .titulo h1{
+    text-align: center;
+    font-size: 2em;
+}
+
+.cont-conteiner{
+    width: 100%;
+}
+
+.hora{
+    color: var(--preto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.hora i{
+    font-size: 2.3rem;
+    margin: 0.5rem 0;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.btns button{
+    cursor: pointer;
+    width: 250px;
+    font-size: 1.3rem;
+    color: var(--branco);
+    background-color: var(--preto);
+    border: 1px solid var(--preto);
+    padding: 0.5rem;
+    margin: 1rem 0;
+    transition: 0.3s;
+}
+
+.btns button:hover{
+    background-color: var(--tx-destaque);
+    color: var(--branco);
+}
+
+.links-social{
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 0.5rem;
+}
+
+.links-social i{
+    cursor: pointer;
+    color: var(--preto);
+    margin-right: 1rem;
+    transition: 0.3s;
+}
+
+.links-social i:hover{
+    transform: scale(1.2);
+}
+
+/* ===== Footer ===== */
