@@ -1,0 +1,16 @@
+/* Responsividade */
+
+@media (max-width: 780px){
+    /* Header */
+    header .nav-bar{
+        display: none;
+    }
+
+    /* Menu Mobile */
+    
+
+    /* Ícone Menu aberto */
+    .btn-menu-mob .bx.bx-menu{
+        display: block;
+    }
+}

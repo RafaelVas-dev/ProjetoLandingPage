@@ -8,26 +8,46 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Link CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
     <title>Style Motors</title>
 </head>
 <body>
 
 
     <!-- ==== Header ==== -->
-    <header>
+    <header id="header">
+
         <div class="nav-bar">
             <nav class="nav-list">
                 <ul>
-                    <a href="#desc"><li>Quem somos?</li></a>
+                    <li><a href="#desc">Quem somos?</a></li>
 
-                    <a href="#serv"><li>Serviços</li></a>
+                    <li><a href="#serv"><li>Serviços</li></a></li>
 
-                    <a href="#fts"><li>Fotos</li></a>
+                    <li><a href="#fts"><li>Fotos</li></a></li>
 
-                    <a href="#cont"><li>Contato</li></a>
+                    <li><a href="#cont"><li>Contato</li></a></li>
                 </ul>
             </nav>
         </div>
+
+        <div class="btn-menu-mob" id="btn-menu-mob">
+            <i class='bx bx-menu'></i>
+            <i class='bx bx-x'></i>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <nav class="nav-list-mob">
+                <ul>
+                    <li><a href="#desc">Quem somos</a></li>
+                    <li><a href="#serv">Serviços</a></li>
+                    <li><a href="#fts">Fotos</a></li>
+                    <li><a href="#cont">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
     </header>
 
 
@@ -188,10 +208,76 @@
     <footer>
         <div class="interface">
 
+            <div class="footer-top">
+                <h2>Quer receber mais notícias sobre o mundo automotivo?</h2>
+                <p>Visite nosso blog e receba as princípais notícias do mundo automotivo diariamente no seu e-mail</p>
+
+                <form action="#">
+                    <input type="email" id="email" placeholder="Digite seu e-mail">
+                    <input type="submit" value="Cadastrar-se">
+                </form>
+            </div>
+
+            <div class="footer-mid">
+
+                <div class="box">
+                    <img src="assets/icons/RV.png" alt="logoRV" width="100px" height="100px">
+                    <p>Site desenvolvido por Rafael vas. Esse projeto tem o intuito de aprimorar minhas habilidades e conhecimentos como Desenvolvedor Web <br>Site inspirado em: <a href="https://batistinha.com.br/" target="_blank">"Batistinha"</a> </p>
+                </div>
+
+                <div class="box">
+
+                    <h3>Links Uteis</h3>
+                    <div class="links-footer">
+                        <a href="https://portifolio-rafaelvas.netlify.app/" target="_blank">Portifólio</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <h3>Serviços</h3>
+                    <div class="links-footer">
+
+                        <a href="#" target="_blank">Sites</a>
+                        <a href="#" target="_blank">Landing page</a>
+                        <a href="#" target="_blank">Lojas online</a>
+                        <a href="#" target="_blank">Criação de blogs</a>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <h3>Fale Comigo</h3>
+                    <div class="links-footer">
+                        <a href="#">Whatsapp</a>
+                        <a href="#">E-mail</a>
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <h3>Siga-me</h3>
+                    <div class="btn-redes">
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>Rafael Basso Vas &copy; Todos os direitos reservados</p>
+            </div>
+
         </div>
     </footer>
    
 
-    <script src="index.js"></script>
+    <script src="assets/JS/index.js"></script>
 </body>
 </html>
