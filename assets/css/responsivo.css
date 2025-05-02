@@ -1,16 +1,131 @@
 /* Responsividade */
 
+@media (max-width: 1220px){
+
+    /* Serviços */
+
+    .servicos{
+        height: 100%;
+        margin: 0 auto;
+    }
+    
+    .conteiner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 2.5em auto;
+    }
+
+    .item{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .item-info{
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .item-info h4{
+        margin-bottom: 0.3rem;
+    }
+
+}
+
+@media (max-width: 950px){
+    /* Footer */    
+    .footer-top h2{
+        margin-bottom: 1rem;
+    }
+    
+    .footer-top form{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .footer-top input[type=email]{
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-top input[type=submit]{
+        width: 180px;
+        padding: 0.4rem;
+    }
+    
+    .footer-mid{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .box{
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .box a{
+        display: inline;
+        margin-right: 20px;
+    }
+}
+
+
+
 @media (max-width: 780px){
+
     /* Header */
     header .nav-bar{
         display: none;
     }
 
     /* Menu Mobile */
-    
-
-    /* Ícone Menu aberto */
     .btn-menu-mob .bx.bx-menu{
         display: block;
+    }
+
+    /* Descrição */
+    .info{
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .info h3{
+        width: 100%;
+        font-size: 4em;
+        margin-bottom: 1.5rem;
+    }
+    
+    .info p{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* Contato */  
+    .btns{
+        flex-direction: column;
+        margin: 30px auto;
+        gap: 0;
+    }
+    
+    .btns button{
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 530px){
+    /* Fotos */
+    /* Botões de navegação */
+
+    .btn-nav-box{
+        bottom: 210px;
     }
 }

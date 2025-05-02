@@ -56,7 +56,7 @@ header{
     margin: 0 auto;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 100;
     font-size: 1.2rem;
     animation: animaTexto .7s ease-out forwards;
 }
@@ -82,6 +82,7 @@ header{
 header.rolar{
     background-color: var(--branco);
     box-shadow: 0 0 10px var(--sombra);
+    z-index: 100;
 }
 
 header.rolar .nav-bar a{
@@ -239,7 +240,7 @@ body.no-overflow{
 /* ===== Serviços ===== */
 .servicos{
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
 }
 
 .conteiner{
@@ -347,12 +348,18 @@ body.no-overflow{
     height: 100%;
     overflow: hidden;
     border-radius: 8px;
+    opacity: 0;
+    transition: all .5s;
 }
   
 .slider-ft img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.slider-ft.ativo{
+    opacity: 1;
 }
 
 /* Setas */
@@ -395,8 +402,8 @@ body.no-overflow{
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 112px;
-    z-index: 4;
+    bottom: 180px;
+    z-index: 50;
    
 }
 
@@ -409,12 +416,33 @@ body.no-overflow{
     transition: 0.4s;
 }
 
+.btn-nav.ativo{
+    background-color: var(--tx-destaque);
+}
+
 .btn-nav:hover{
     background-color: var(--branco);
 }
-  
 
+.conteiner-info{
+    color: var(--preto);
+    width: 100%;
+    padding: 2.5rem;
+    text-align: center;
+}
 
+.conteiner-info p{
+    font-size: 1.4rem;
+}
+
+.conteiner-info i{
+    font-size: 30px;
+    margin-right: 1rem;
+    background-image: linear-gradient(to right, #FFD600, #FF7A00, #FF0069, #D300C5, #7638FA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* ========== */
 
 
@@ -444,6 +472,7 @@ body.no-overflow{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     font-size: 1.5rem;
 }
 
