@@ -58,6 +58,10 @@ header{
     top: 0;
     z-index: 2;
     font-size: 1.2rem;
+    animation: animaTexto .7s ease-out forwards;
+}
+
+.nav-list{
     transition: 0.4s ease;
 }
 
@@ -164,7 +168,7 @@ body.no-overflow{
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4), var(--cor0));
     background-size: 400% 100%;
-    animation: degrade 10s linear infinite alternate;
+    animation: degrade 10s linear infinite alternate, animaTexto 1s ease-out forwards;
 }
 
 /* Animação do Titulo */
@@ -176,6 +180,19 @@ body.no-overflow{
         background-position: 400%;
     }
 }
+
+@keyframes animaTexto{
+    100%{
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    0%{
+        transform: translateY(-1000px) scale(0.5);
+        opacity: 0;
+    }
+}
+
+/* ========= */
 
 #bg-video {
     width: 100%;
@@ -296,6 +313,107 @@ body.no-overflow{
 }
 
 /* ===== Fotos ===== */
+.fotos {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+  
+.conteiner2 {
+    border-radius: 10px;
+    background-color: var(--branco);
+    height: auto;
+    margin: 3em auto;
+    box-shadow: 3px 0 10px var(--sombra) ;
+    max-width: 95%;
+    overflow: hidden;
+}
+  
+.conteiner-fts {
+    position: relative;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1100px; 
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+  
+.slider-ft{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+  
+.slider-ft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Setas */
+.setas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 3em;
+}
+
+.setas button{
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: none;
+    transition: 0.3s;
+}
+
+.setas button:hover{
+    transform: scale(1.1);
+}
+
+.setas button i{
+    color: var(--tx-destaque);
+    font-size: 6em;
+}
+
+/* Botões de navegação */
+.btn-nav-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 112px;
+    z-index: 4;
+   
+}
+
+.btn-nav{
+    cursor: pointer;
+    width: 30px;
+    height: 10px;
+    border: 1px solid var(--branco);
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.btn-nav:hover{
+    background-color: var(--branco);
+}
+  
+
 
 /* ========== */
 

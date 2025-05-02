@@ -15,7 +15,6 @@ document.addEventListener('scroll', () => {
 
 // ===== Menu Mobile =====
 
-let btnMenu  = document.querySelector ('#btn-menu-mob');
 let menuMobile = document.querySelector('#menu-mobile');
 let links = document.querySelector('.nav-list-mob');
 let body = document.querySelector('body');
@@ -51,3 +50,5 @@ links.addEventListener('click', () => {
     menuMobile.classList.remove('abrir')
     body.classList.remove('no-overflow')
 });
+
+// Sliders das Fotos
